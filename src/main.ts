@@ -1,8 +1,6 @@
 import { Client, GatewayIntentBits } from 'discord.js'
 import vueInit from '@/core/vue'
-import { useAppStore } from '@/store/app'
 import envVar from '@/config/envVar'
-// import { dailyCorn } from '@/core/corn'
 
 import { loadCommandFiles, updateCommands, loadEvents } from '@/core/loader'
 

@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['./.eslintrc-auto-import.json'],
   env: {
     browser: true,
     node: true,

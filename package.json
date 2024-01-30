@@ -38,6 +38,7 @@
     "@types/git-rev-sync": "^2.0.2",
     "@types/lodash-es": "^4.17.12",
     "cross-env": "^7.0.3",
+    "unplugin-auto-import": "^0.17.5",
     "vite-node": "^1.2.2"
   },
   "engines": {

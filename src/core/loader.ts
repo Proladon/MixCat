@@ -7,25 +7,27 @@ import {
 } from 'discord.js'
 import fg from 'fast-glob'
 import envVar from '@/config/envVar'
+import botConfig from '@/config/bot'
 
 export const logCommandChanges = () => {}
 
 export const updateCommands = async (commands: SlashCommandBuilder[]) => {
-  const rest = new REST({ version: '10' }).setToken(envVar.BotToken)
+  const rest = new REST({ version: botConfig.restApiVersion })
+  rest.setToken(envVar.BotToken)
   try {
     await rest.put(
       Routes.applicationGuildCommands(envVar.ClientId, envVar.GuildId),
       { body: commands },
     )
   } catch (error) {
-    console.log('updateCommands', error)
+    console.log('[🔥error] updateCommands: ', error)
   }
 }
 
 export const loadCommandFiles = async () => {
   const commands: SlashCommandBuilder[] = []
   const actions: Collection<string, () => Promise<void>> = new Collection()
-  const files = await fg('./src/commands/**/index.ts')
+  const files = await fg(`${botConfig.slashCommandDir}/**/index.ts`)
 
   for (const file of files) {
     const cmd = await import(file)
@@ -42,7 +44,7 @@ export const loadCommandFiles = async () => {
 }
 
 export const loadEvents = async (client: Client) => {
-  const files = await fg('./src/events/**/index.ts')
+  const files = await fg(`${botConfig.eventCommandDir}/**/index.ts`)
   for (const file of files) {
     const eventFile = await import(file)
 

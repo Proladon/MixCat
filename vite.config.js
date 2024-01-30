@@ -5,6 +5,9 @@ import AutoImport from 'unplugin-auto-import/vite'
 export default defineConfig({
   plugins: [
     AutoImport({
+      include: [
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+      ],
       imports: ['vue', 'pinia'],
       dirs: ['./src/lib', './src/store'],
       dts: true,

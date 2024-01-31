@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 開始上手
-      link: /tw/guide/getting-started
+      link: /tw/guide/environment
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples

@@ -1,38 +1,38 @@
-import { defineConfig } from "vitepress";
+import { defineConfig } from 'vitepress'
 
 export const en = defineConfig({
-  lang: "en",
+  lang: 'en',
   themeConfig: {
     sidebar: [
       {
-        text: "Getting Started",
+        text: 'Getting Started',
         collapsed: false,
         items: [
-          { text: "Environment", link: "/guide/environment" },
-          { text: "Config", link: "/guide/dev-config" },
+          { text: 'Quick Start', link: '/guide/quick-start' },
+          { text: 'Config', link: '/guide/configuration' },
         ],
       },
     ],
     footer: {
-      message: "Released under the MIT License.",
+      message: 'Released under the MIT License.',
       copyright: `Copyright  © 2023-${new Date().getFullYear()} Proladon`,
     },
 
     docFooter: {
-      prev: "Pre",
-      next: "Next",
+      prev: 'Pre',
+      next: 'Next',
     },
 
     outline: {
-      label: "Page Menu",
+      label: 'Page Menu',
     },
 
     lastUpdated: {
-      text: "Last Updated At",
+      text: 'Last Updated At',
       formatOptions: {
-        dateStyle: "short",
-        timeStyle: "medium",
+        dateStyle: 'short',
+        timeStyle: 'medium',
       },
     },
   },
-});
+})

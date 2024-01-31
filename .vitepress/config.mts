@@ -1,7 +1,7 @@
-import { defineConfig } from "vitepress";
-import { shared } from "./shared";
-import { en } from "./en";
-import { tw } from "./tw";
+import { defineConfig } from 'vitepress'
+import { shared } from './shared'
+import { en } from './en'
+import { tw } from './tw'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,12 +9,12 @@ export default defineConfig({
 
   locales: {
     root: {
-      label: "English",
+      label: 'English',
       ...en,
     },
     tw: {
-      label: "繁體中文",
+      label: '繁體中文',
       ...tw,
     },
   },
-});
+})

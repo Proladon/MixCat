@@ -1,16 +1,21 @@
-import { createRequire } from "module";
-import { defineConfig, type DefaultTheme } from "vitepress";
-
-const require = createRequire(import.meta.url);
-const pkg = require("vitepress/package.json");
+import { defineConfig } from "vitepress";
 
 export const en = defineConfig({
   lang: "en",
-
   themeConfig: {
+    sidebar: [
+      {
+        text: "Getting Started",
+        collapsed: false,
+        items: [
+          { text: "Environment", link: "/guide/environment" },
+          { text: "Config", link: "/guide/dev-config" },
+        ],
+      },
+    ],
     footer: {
-      message: "基于 MIT 许可发布",
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} 尤雨溪`,
+      message: "Released under the MIT License.",
+      copyright: `Copyright  © 2023-${new Date().getFullYear()} Proladon`,
     },
 
     docFooter: {
@@ -29,12 +34,5 @@ export const en = defineConfig({
         timeStyle: "medium",
       },
     },
-
-    // langMenuLabel: "多语言",
-    // returnToTopLabel: "回到顶部",
-    // sidebarMenuLabel: "菜单",
-    // darkModeSwitchLabel: "主题",
-    // lightModeSwitchTitle: "切换到浅色模式",
-    // darkModeSwitchTitle: "切换到深色模式",
   },
 });

@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://github.com/Proladon/MixCat/blob/main/mix-cat_logo.png" width="250px">
+</div>
+
 <h1 align="center">
   <br>
     MixCat Discord Bot

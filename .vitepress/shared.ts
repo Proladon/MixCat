@@ -5,6 +5,7 @@ export const shared = defineConfig({
   description: 'A discord.js bot mixed with vite, vue, pinia',
   lastUpdated: true,
   cleanUrls: true,
+  ignoreDeadLinks: true,
   base: '/MixCat/',
 
   /* prettier-ignore */

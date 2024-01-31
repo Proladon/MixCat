@@ -1,5 +1,13 @@
 # Quick Start
 
+## Step 0. Download Project
+
+```sh
+git clone https://github.com/Proladon/MixCat.git
+```
+
+Or directly download the project as a .zip file：[Download](https://github.com/Proladon/MixCat/archive/refs/heads/main.zip)
+
 ## Step 1. Environment Variable File
 
 Rename `.env.example` in the project to `.env.production`and fill in the necessary fields：

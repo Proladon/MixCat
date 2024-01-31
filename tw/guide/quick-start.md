@@ -1,5 +1,13 @@
 # 快速開始
 
+## Step 0. 下載專案
+
+```sh
+git clone https://github.com/Proladon/MixCat.git
+```
+
+或者直接下載專案 .zip：[Download](https://github.com/Proladon/MixCat/archive/refs/heads/main.zip)
+
 ## Step 1. 環境變數檔
 
 將專案中的 `.env.example` 重新命名成 `.env.production`，並填寫檔案中的必要欄位

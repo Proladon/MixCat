@@ -11,11 +11,11 @@ hero:
     alt: MixCat
   actions:
     - theme: brand
-      text: Getting Start
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 開始上手
+      link: /guide/getting-started
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
   - title: Feature A

@@ -16,7 +16,7 @@ export const shared = defineConfig({
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'en' }],
     ['meta', { name: 'og:site_name', content: 'MixCat Discord Bot' }],
-    ['meta', { name: 'og:image', content: 'https://github.com/Proladon/MixCat/blob/main/mix-cat_logo.png' }],
+    ['meta', { name: 'og:image', content: 'https://raw.githubusercontent.com/Proladon/MixCat/main/mix-cat_logo.png' }],
   ],
 
   themeConfig: {
@@ -25,6 +25,7 @@ export const shared = defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Proladon/MixCat' },
+      { icon: 'discord', link: 'https://shelterzone.net' },
     ],
   },
 })

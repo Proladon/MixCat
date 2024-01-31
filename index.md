@@ -13,9 +13,9 @@ hero:
     - theme: brand
       text: Quick Start
       link: /guide/quick-start
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
+    - theme: alt
+      text: Overview
+      link: /overview
 
 features:
   - title: 🧲 Path Aliases

@@ -13,9 +13,9 @@ hero:
     - theme: brand
       text: 快速開始
       link: /tw/guide/quick-start
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
+    - theme: alt
+      text: Overview
+      link: /tw/overview
 
 features:
   - title: 🧲 路徑別名

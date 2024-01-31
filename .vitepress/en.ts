@@ -5,6 +5,10 @@ export const en = defineConfig({
   themeConfig: {
     sidebar: [
       {
+        text: 'Overview',
+        link: '/overview',
+      },
+      {
         text: 'Getting Started',
         collapsed: false,
         items: [

@@ -5,6 +5,10 @@ export const tw = defineConfig({
   themeConfig: {
     sidebar: [
       {
+        text: 'Overview',
+        link: '/tw/overview',
+      },
+      {
         text: '開始上手',
         collapsed: false,
         items: [

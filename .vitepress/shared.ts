@@ -1,10 +1,11 @@
-import { defineConfig } from "vitepress";
+import { defineConfig } from 'vitepress'
 
 export const shared = defineConfig({
-  title: "MixCat Discord Bot",
-  description: "A discord.js bot mixed with vite, vue, pinia",
+  title: 'MixCat Discord Bot',
+  description: 'A discord.js bot mixed with vite, vue, pinia',
   lastUpdated: true,
   cleanUrls: true,
+  base: '/MixCat/',
 
   /* prettier-ignore */
   head: [
@@ -19,10 +20,10 @@ export const shared = defineConfig({
 
   themeConfig: {
     i18nRouting: true,
-    logo: { src: "/mix-cat_logo.png", width: 24, height: 24 },
+    logo: { src: '/mix-cat_logo.png', width: 24, height: 24 },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/Proladon/MixCat" },
+      { icon: 'github', link: 'https://github.com/Proladon/MixCat' },
     ],
   },
-});
+})

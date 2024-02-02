@@ -24,6 +24,12 @@
 
 MixCat is a discord bot framework conceptualized by Proladon. It combines the basics of a discord.js bot with elements from the frontend ecosystem, such as [Vite (frontend bundling tool)](https://vitejs.dev), [Vue (frontend framework)](https://vuejs.org), and [Pinia (frontend global state management library)](https://pinia.vuejs.org).
 
+### Support Discord Server (language: Traditional Chinese)
+
+<a href="https://shelterzone.net" target="_blank" >
+<img src="https://discordapp.com/api/guilds/445157253385814016/widget.png?style=banner2" alt="Discord Banner 2"/>
+</a>
+
 ## Why
 
 As a frontend engineer, my familiarity revolves around the Vue/Vite technical ecosystem on a daily basis. I particularly appreciate Vue's reactive design, Vite's simplicity and speed, and the extensive community and ecosystem.

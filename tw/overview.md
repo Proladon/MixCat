@@ -2,6 +2,12 @@
 
 MixCat 是一個由 [Proladon](https://github.com/Proladon) 所構想出的一個 discord bot 架構，是由最基本的 discord.js bot 結合混用了一些前端生態套件與工具，像是 [vite(前端打包工具)](https://vitejs.dev)、[vue(前端框架)](https://vuejs.org)、[pinia(前端全域狀態管理套件)](https://pinia.vuejs.org) 而成的一個 discord bot 架構。
 
+### Support Discord Server (伺服器語言: 中文)
+
+<a href="https://shelterzone.net" target="_blank" >
+<img src="https://discordapp.com/api/guilds/445157253385814016/widget.png?style=banner2" alt="Discord Banner 2"/>
+</a>
+
 ### [Youtube 教學影片撥放清單](https://www.youtube.com/playlist?list=PLSCgthA1AnidGdmSea6V6N24O8mXESrf3)
 
 如果你想深入一步步了解 MixCat 的運作原理與方式，可觀看 Proladon 的教學影片

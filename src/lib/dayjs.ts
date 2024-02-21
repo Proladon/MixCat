@@ -8,8 +8,8 @@ _dayjs.extend(timezone)
 _dayjs.tz.setDefault(botConfig.timeZone)
 
 export const dayjs = (dateTime?: string | Date, timeZone?: string) => {
-  if (timeZone) return _dayjs.tz(dateTime, timeZone)
-  if (!dateTime && timeZone) return _dayjs().tz(timeZone)
-  else if (!dateTime && !timeZone) return _dayjs.tz()
-  return _dayjs.tz(dateTime)
+  if (timeZone) return _dayjs.utc(dateTime).tz(timeZone)
+  if (!dateTime && timeZone) return _dayjs.utc().tz(timeZone)
+  else if (!dateTime && !timeZone) return _dayjs.utc().tz()
+  return _dayjs.utc(dateTime).tz()
 }

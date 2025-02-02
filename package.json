@@ -8,6 +8,7 @@
     "url": "git+https://github.com/Proladon/startcord.git"
   },
   "keywords": [
+    "discordjs",
     "discord",
     "bot",
     "vue",

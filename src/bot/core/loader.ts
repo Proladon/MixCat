@@ -27,7 +27,7 @@ export const updateCommands = async (commands: SlashCommandBuilder[]) => {
 export const loadCommandFiles = async () => {
   const commands: SlashCommandBuilder[] = []
   const actions: Collection<string, () => Promise<void>> = new Collection()
-  const files = await fg(`${botConfig.slashCommandDir}/**/index.ts`)
+  const files = await fg(`./src/bot/commands/**/index.ts`)
 
   for (const file of files) {
     const cmd = await import(file)
@@ -44,10 +44,9 @@ export const loadCommandFiles = async () => {
 }
 
 export const loadEvents = async (client: Client) => {
-  const files = await fg(`${botConfig.eventCommandDir}/**/index.ts`)
+  const files = await fg(`./src/bot/events/**/index.ts`)
   for (const file of files) {
     const eventFile = await import(file)
-
     if (eventFile.event.once) {
       client.once(eventFile.event.name, eventFile.action)
     } else {

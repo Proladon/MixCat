@@ -13,16 +13,16 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
-    "skipLibCheck": false,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@/*": ["./src/*"]
     },
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
   },
-  "include": [
-    "./auto-imports.d.ts",
-    "src/**/*.ts",
-    "src/**/*.js",
-  ],
+  "include": ["./auto-imports.d.ts", "src/**/*.ts", "src/**/*.js", "**/*.d.ts"],
   "exclude": ["build", "node_modules"],
+  "types": ["node"]
 }

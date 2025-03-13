@@ -24,6 +24,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 .eslintrc-auto-import.json
+auto-imports.d.ts
 
 # misc
 .DS_Store

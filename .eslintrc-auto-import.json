@@ -85,6 +85,12 @@
     "useId": true,
     "useModel": true,
     "useTemplateRef": true,
-    "vue": true
+    "vue": true,
+    "dateFormat": true,
+    "editChannelPermission": true,
+    "fetchWrapper": true,
+    "findChannel": true,
+    "findMember": true,
+    "sleep": true
   }
 }

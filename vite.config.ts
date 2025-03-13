@@ -9,7 +9,7 @@ export default defineConfig({
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
       ],
       imports: ['vue', 'pinia'],
-      dirs: ['./src/lib', './src/store'],
+      dirs: ['./src/lib', './src/store', './src/utils'],
       dts: true,
       eslintrc: {
         enabled: true,

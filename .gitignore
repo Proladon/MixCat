@@ -1,5 +1,6 @@
 # dev
 .yarn/
+yarn.lock
 !.yarn/releases
 .vscode/*
 !.vscode/launch.json

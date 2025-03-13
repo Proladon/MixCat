@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: 'MixCat'
-  text: 'A discord.js bot mixed with vite, vue, pinia'
+  text: 'A discord.js bot mixed with vite, vue, pinia and Hono'
   tagline: Proladon styles discord bot ヾ(•ω•`)o
   image:
     src: /mix-cat_logo.png

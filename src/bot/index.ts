@@ -7,7 +7,7 @@ let client: Client
 export const startBot = async () => {
   const appStore = useAppStore()
   const { commands, actions } = await loadCommandFiles()
-  updateCommands(commands)
+  // updateCommands(commands)
   client = new Client({
     intents: [
       GatewayIntentBits.Guilds,

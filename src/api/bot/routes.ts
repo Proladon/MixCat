@@ -1,4 +1,5 @@
 import { destroyBot, startBot } from '@/bot'
+import { loadCommandFiles, updateCommands } from '@/bot/core/loader'
 import { Hono } from 'hono'
 
 const app = new Hono()
@@ -29,6 +30,17 @@ app.post('/restart', async (c) => {
   } catch (error) {
     console.error('Error restarting bot:', error)
     return c.text('Failed to restart bot', 500)
+  }
+})
+
+app.post('/deploy-commands', async (c) => {
+  try {
+    const { commands } = await loadCommandFiles()
+    await updateCommands(commands)
+    return c.text('Commands deployed successfully')
+  } catch (error) {
+    console.error('Error deploying commands:', error)
+    return c.text('Failed to deploy commands', 500)
   }
 })
 

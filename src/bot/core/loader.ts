@@ -21,6 +21,7 @@ export const updateCommands = async (commands: SlashCommandBuilder[]) => {
     )
   } catch (error) {
     console.log('[🔥error] updateCommands: ', error)
+    throw error
   }
 }
 

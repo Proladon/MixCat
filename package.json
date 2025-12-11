@@ -18,6 +18,7 @@
   "scripts": {
     "dev": "vite-node src/index.ts",
     "start": "cross-env MODE=production vite-node src/main.ts ",
+    "deploy:commands": "cross-env MODE=production vite-node src/scripts/deploy_commands.ts",
     "docker:build": "cross-env MODE=production sudo ./script/build_docker.sh",
     "docker:run": "sudo ./script/run_docker.sh"
   },
